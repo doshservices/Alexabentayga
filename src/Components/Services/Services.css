@@ -1,0 +1,48 @@
+/* core services  */
+.coreservices .thumbnail {
+  border-bottom: 6px solid #39baf4;
+  box-shadow: 0 0 20px 0 rgba(112, 121, 138, 0.341);
+}
+.coreservices .thumbnail span {
+  font-size: 40px;
+  height: auto;
+}
+
+/* why us  */
+.whyus {
+  background-color: rgba(196, 246, 255, 0.433);
+}
+.whyus .thumbnail {
+  /* background-color: #39BAF4; */
+  border-left: 6px solid #39baf4;
+}
+.whyus .thumbnail span {
+  font-size: 40px;
+  height: auto;
+}
+
+/* RESPONSIVE SECTION  */
+@media screen and (max-width: 768px) {
+  .ourcore .heading h1,
+  .whyus .heading h1 {
+    padding-left: 40px;
+  }
+  .ourcore .heading > h1::after {
+    background: #39bbf5;
+    height: 4px;
+    width: 10px !important;
+    content: "";
+    position: absolute;
+    left: 26px;
+    top: 19px;
+  }
+  .whyus .heading > h1::after {
+    background: #39bbf5;
+    height: 4px;
+    width: 10px !important;
+    content: "";
+    position: absolute;
+    left: 26px;
+    top: 19px;
+  }
+}

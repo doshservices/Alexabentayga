@@ -1,0 +1,37 @@
+.left p {
+  text-align: justify;
+  line-height: 25px;
+}
+.img_layer {
+  background-color: #39bbf5;
+  padding: 1.5rem;
+  overflow: hidden;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.img_layer:hover {
+  padding: 0rem;
+  transition: 0.9s ease-out;
+  -webkit-transition: 0.9s ease-out;
+  -moz-transition: 0.9s ease-out;
+  -ms-transition: 0.9s ease-out;
+  -o-transition: 0.9s ease-out;
+}
+
+@media screen and (max-width: 768px) {
+  .left .heading h1 {
+    padding-left: 50px;
+  }
+  .Habout .heading > h1::after {
+    background: #39bbf5;
+    height: 4px;
+    width: 20px !important;
+    content: "";
+    position: absolute;
+    left: 26px;
+    top: 19px;
+  }
+}

@@ -1,0 +1,144 @@
+.top_header {
+  background-color: #fff;
+  padding: 0.5rem;
+}
+.box span,
+.box span a {
+  color: gray;
+  font-size: 0.8rem;
+  margin-left: 0.3rem;
+}
+.box .Fa {
+  color: #39bbf5;
+  font-size: 1.3rem;
+}
+header {
+  background-color: #131e4a;
+  height: 12vh;
+  box-shadow: 0 5px 30px rgb(0 22 98 / 20%);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+header img {
+  width: 120px;
+}
+header a {
+  color: #fff;
+  margin-left: 30px;
+  font-weight: 500;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+header a:hover {
+  color: #39bbf5;
+}
+header span {
+  width: auto;
+  padding: 0 6px;
+  background-color: #39bbf5;
+  color: #fff;
+  margin-right: 4px;
+  font-weight: 400;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+header h4 {
+  font-weight: 500;
+  margin-right: 20px;
+}
+header .large {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+header .toggle {
+  display: none;
+}
+
+/* Heading styles */
+.heading > h1 {
+  position: relative;
+  display: flex;
+  color: #131e4a;
+  text-transform: uppercase;
+  padding-left: 86px;
+}
+.heading > h1::after {
+  background: #39bbf5;
+  height: 4px;
+  width: 40px;
+  content: "";
+  position: absolute;
+  left: 26px;
+  top: 19px;
+}
+.heading > h1::before {
+  background: #39bbf5;
+  height: 4px;
+  width: 15px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 19px;
+}
+
+@media screen and (max-width: 768px) {
+  .top_header {
+    display: none !important;
+  }
+  header {
+    padding: 0;
+    /* height: 10vh; */
+  }
+  header img {
+    margin-top: 10px;
+    margin-left: -19px;
+  }
+
+  header .nav .large {
+    display: none !important;
+  }
+  header .toggle {
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+  }
+  header .nav .small {
+    position: absolute !important;
+    top: 12vh;
+    left: 0;
+    width: 100%;
+    background-color: #39bbf5;
+    padding: 20px;
+  }
+  header li a {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  /* heading style  */
+
+  .heading > h1 {
+    position: relative;
+    text-transform: uppercase;
+    padding-left: 0px;
+  }
+  .heading > h1::after {
+    background: #39bbf5;
+    height: 4px;
+    width: 70px;
+    content: "";
+    position: absolute;
+    left: 26px;
+    top: 19px;
+  }
+}

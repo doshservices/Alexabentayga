@@ -1,0 +1,29 @@
+.hero {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* margin: auto; */
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background: rgba(47, 106, 127, 0.72);
+  top: 0;
+  /* overflow: hidden; */
+  z-index: 99;
+  mix-blend-mode: hard-light;
+}
+.hero img {
+  width: 100%;
+  overflow: hidden;
+  height: 80vh;
+  object-fit: cover;
+}
+.hero .mySwiper {
+  z-index: 2;
+}
